@@ -1,0 +1,259 @@
+@font-face {
+	font-family: 'Conv_Butler_Light';
+	src: url('../../fonts/Butler_Light.eot');
+    src: local('☺'), 
+        url('../../fonts/Butler_Light.woff') format('woff'), 
+        url('../../fonts/Butler_Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Butler_Medium';
+	src: url('../../fonts/Butler_Medium.eot');
+    src: local('☺'), 
+        url('../../fonts/Butler_Medium.woff') format('woff'), 
+        url('../../fonts/Butler_Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Butler_Regular';
+	src: url('../../fonts/Butler_Regular.eot');
+    src: local('☺'), 
+        url('../../fonts/Butler_Regular.woff') format('woff'), 
+        url('../../fonts/Butler_Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Lato-Regular';
+	src: url('fonts/Lato-Regular.eot');
+    src: local('☺'), 
+        url('../../fonts/Lato-Regular.woff') format('woff'), 
+        url('../../fonts/Lato-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../HelveticaNeueCyr-Light.eot');
+    src: local('HelveticaNeueCyr-Light'),
+        url('../../HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../HelveticaNeueCyr-Light.woff2') format('woff2'),
+        url('../../HelveticaNeueCyr-Light.woff') format('woff'),
+        url('../../HelveticaNeueCyr-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../HelveticaNeueCyr-Roman.eot');
+    src: local('HelveticaNeueCyr-Roman'),
+        url('../../HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+        url('../../HelveticaNeueCyr-Roman.woff2') format('woff2'),
+        url('../../HelveticaNeueCyr-Roman.woff') format('woff'),
+        url('../../HelveticaNeueCyr-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Standart options
+
+//
+
+// Files and elements include
+@import "nullstyle.scss";
+//
+
+.wrapper {
+    width: 100%;
+    max-width: 1620px;
+    min-width: 320px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.container {
+    width: 1182px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+// Header
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    &__topbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        &-contacts {
+            display: flex;
+            flex-direction: row;
+            width: 313px;
+            justify-content: space-between;
+        }
+        &-social {
+            display: flex;
+            flex-direction: row;
+            width: 170px;
+            justify-content: space-between;
+            .social-icon {
+                display: block;
+                height: 14px;
+                width: 14px;
+                transition: box-shadow 0.3s;
+                border-radius: 4px;
+                &:hover{
+                    box-shadow: 2px 2px 1px 0 #e8be7b;
+                }
+            }
+
+            .twitter { 
+                background-image: url("../../images/sprite-social.png");
+            }
+            .fb {
+                background-image: url("../../images/sprite-social.png");
+                background-position: -38px 0;
+            }
+            .youtube {
+                background-image: url("../../images/sprite-social.png");
+                background-position: -77px 0;
+            }
+            .inst {
+                background-image: url("../../images/sprite-social.png");
+                background-position: -118px 0;
+            }
+            .trash {
+                background-image: url("../../images/sprite-social.png");
+                background-position: -157px 0;
+            }
+        }
+    }
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 228px;
+        width: inherit;
+        &-logo {
+            width: 132px;
+            height: 48px;
+        }
+        &-menu {
+            width: 555px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .menu-btn {
+                display: block;
+                color: white;
+                text-transform: uppercase;
+                transition: color 0.3s;
+                &:hover {
+                    color: #e8be7b;
+                }
+            }
+        }
+    }
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        h1 {
+            display: block;
+            color: white;
+            text-transform: capitalize;
+            font-family: "Conv_Butler_Medium";
+            font-size: 64px;
+            span {
+                color: #e8be7b;
+            }
+        }
+        p {
+            padding-top: 16px;
+            display: block;
+            color: white;
+            font-family: "Conv_Lato-Regular";
+        }
+        .title-buttons {
+            padding-top: 47px;
+            .title-button {
+                display: inline-block;
+                width: 180px;
+                padding: 18px 0;
+                border: 1px solid white;
+                border-radius: 2px;
+                text-align: center;
+                text-transform: uppercase;
+                color: white;
+                font-family: "Conv_Lato-Regular";
+                font-size: 14px;
+                transition: background-color 0.3s;
+                &.about-info {
+                    margin-right: 15px;
+                }
+                &.play-video {
+                    margin-left: 15px;
+                    &::before {
+                        content: "";
+                        display: inline-block;
+                        font-size: 0;
+                        padding-right: 5px;
+                        width: 0;
+                        height: 0;
+                        border-top: 6px solid transparent;
+                        border-bottom: 6px solid transparent;
+                        border-left: 15px solid white;
+                    }
+                }
+                &:hover {
+                    background-color: #e8be7b;
+                }
+            }
+        }
+    }
+    .header__slider {
+        position: absolute;
+        z-index: -10;
+        .slide {
+        }
+    }
+    .header__buttons {
+    }
+}
+
+
+.services {
+}
+.gallery {
+}
+.channel {
+}
+.blog {
+}
+.contact {
+}
+.footer {
+}
