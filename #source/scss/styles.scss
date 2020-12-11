@@ -1,10 +1,12 @@
+
+
 //Conv_Butler_Light
 @font-face {
 	font-family: 'Conv_Butler_Light';
-	src: url('../../fonts/Butler_Light.eot');
+	src: url('../fonts/Butler_Light.eot');
     src: local('☺'), 
-        url('../../fonts/Butler_Light.woff') format('woff'), 
-        url('../../fonts/Butler_Light.ttf') format('truetype');
+        url('../fonts/Butler_Light.woff') format('woff'), 
+        url('../fonts/Butler_Light.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -12,10 +14,10 @@
 //Conv_Butler_Medium
 @font-face {
 	font-family: 'Conv_Butler_Medium';
-	src: url('../../fonts/Butler_Medium.eot');
+	src: url('../fonts/Butler_Medium.eot');
     src: local('☺'), 
-        url('../../fonts/Butler_Medium.woff') format('woff'), 
-        url('../../fonts/Butler_Medium.ttf') format('truetype');
+        url('../fonts/Butler_Medium.woff') format('woff'), 
+        url('../fonts/Butler_Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
 }
@@ -75,7 +77,7 @@ $content-text-color: #3a3a3a;
 //
 
 // Files and elements include
-@import "nullstyle.scss";
+@import "_nullstyle.scss";
 //
 
 // Animations
@@ -102,7 +104,7 @@ $content-text-color: #3a3a3a;
 
 .header {
     position: relative;
-    background-image: url("/images/header-background.png");
+    background-image: url("../images/header-background.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -141,22 +143,22 @@ $content-text-color: #3a3a3a;
             }
 
             .twitter { 
-                background-image: url("../../images/sprite-social.png");
+                background-image: url("../images/sprite-social.png");
             }
             .fb {
-                background-image: url("../../images/sprite-social.png");
+                background-image: url("../images/sprite-social.png");
                 background-position: -38px 0;
             }
             .youtube {
-                background-image: url("../../images/sprite-social.png");
+                background-image: url("../images/sprite-social.png");
                 background-position: -77px 0;
             }
             .inst {
-                background-image: url("../../images/sprite-social.png");
+                background-image: url("../images/sprite-social.png");
                 background-position: -118px 0;
             }
             .trash {
-                background-image: url("../../images/sprite-social.png");
+                background-image: url("../images/sprite-social.png");
                 background-position: -157px 0;
             }
         }
@@ -347,19 +349,19 @@ $content-text-color: #3a3a3a;
                 color: #e8be7b;
             }
             &.about {
-                background-image: url("/images/icon-document.png");
+                background-image: url("../images/icon-document.png");
             }
             &.wedding {
-                background-image: url("/images/icon-heart.png");
+                background-image: url("../images/icon-heart.png");
             }
             &.party {
-                background-image: url("/images/icon-wedding_cake.png");
+                background-image: url("../images/icon-wedding_cake.png");
             }
             &.beauty-box {
-                background-image: url("/images/icon-shopping_bag.png");
+                background-image: url("../images/icon-shopping_bag.png");
             }
             &.course {
-                background-image: url("/images/icon-notebook.png");
+                background-image: url("../images/icon-notebook.png");
             }
         }
     }
@@ -373,7 +375,7 @@ $content-text-color: #3a3a3a;
             max-width: 630px;
             height: 380px;
             margin-right: 70px;
-            background-image: url("/images/bride.png");
+            background-image: url("../images/bride.png");
             background-position: 50% 50%;
             background-repeat: no-repeat;
             background-size: cover;
@@ -446,7 +448,7 @@ $content-text-color: #3a3a3a;
 // Gallery
 .gallery {
     height: 800px;
-    background-image: url("/images/wedding-kiss.png");
+    background-image: url("../images/wedding-kiss.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -478,7 +480,7 @@ $content-text-color: #3a3a3a;
             top: 45%;
             width: 38px;
             height: 16px;
-            background-image: url("../../images/icon-arrow.png");
+            background-image: url("../images/icon-arrow.png");
             transition: opacity 0.3s, transform 0.3s, scale;
         }
         &-date{
@@ -486,7 +488,7 @@ $content-text-color: #3a3a3a;
             width: 123px;
             height: 80px;
             border-right: 1px solid $content-text-color;
-            background-image: url("../../images/icon-love_heart.png");
+            background-image: url("../images/icon-love_heart.png");
             background-repeat: no-repeat;
             background-position: 35px 50px;
             h2 {
