@@ -17,8 +17,8 @@
 
 @font-face {
   font-family: 'Conv_Butler_Regular';
-  src: url("../../fonts/Butler_Regular.eot");
-  src: local("☺"), url("../../fonts/Butler_Regular.woff") format("woff"), url("../../fonts/Butler_Regular.ttf") format("truetype");
+  src: url("../fonts/Butler_Regular.eot");
+  src: local("☺"), url("../fonts/Butler_Regular.woff") format("woff"), url("../fonts/Butler_Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -26,23 +26,23 @@
 @font-face {
   font-family: 'Conv_Lato-Regular';
   src: url("fonts/Lato-Regular.eot");
-  src: local("☺"), url("../../fonts/Lato-Regular.woff") format("woff"), url("../../fonts/Lato-Regular.ttf") format("truetype");
+  src: local("☺"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'HelveticaNeueCyr-Light';
-  src: url("../../HelveticaNeueCyr-Light.eot");
-  src: local("HelveticaNeueCyr-Light"), url("../../HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"), url("../../HelveticaNeueCyr-Light.woff2") format("woff2"), url("../../HelveticaNeueCyr-Light.woff") format("woff"), url("../../HelveticaNeueCyr-Light.ttf") format("truetype");
+  src: url("../HelveticaNeueCyr-Light.eot");
+  src: local("HelveticaNeueCyr-Light"), url("../HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"), url("../HelveticaNeueCyr-Light.woff2") format("woff2"), url("../HelveticaNeueCyr-Light.woff") format("woff"), url("../HelveticaNeueCyr-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'HelveticaNeueCyr-Roman';
-  src: url("../../HelveticaNeueCyr-Roman.eot");
-  src: local("HelveticaNeueCyr-Roman"), url("../../HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("../../HelveticaNeueCyr-Roman.woff2") format("woff2"), url("../../HelveticaNeueCyr-Roman.woff") format("woff"), url("../../HelveticaNeueCyr-Roman.ttf") format("truetype");
+  src: url("../HelveticaNeueCyr-Roman.eot");
+  src: local("HelveticaNeueCyr-Roman"), url("../HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("../HelveticaNeueCyr-Roman.woff2") format("woff2"), url("../HelveticaNeueCyr-Roman.woff") format("woff"), url("../HelveticaNeueCyr-Roman.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -146,7 +146,7 @@ img {
 
 .header {
   position: relative;
-  background-image: url("../images/header-background.webp");
+  background-image: url("../images/header-background.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -544,7 +544,7 @@ img {
   max-width: 630px;
   height: 380px;
   margin-right: 70px;
-  background-image: url("../images/bride.webp");
+  background-image: url("../images/bride.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -637,7 +637,7 @@ img {
 
 .gallery {
   height: 800px;
-  background-image: url("../images/wedding-kiss.webp");
+  background-image: url("../images/wedding-kiss.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
