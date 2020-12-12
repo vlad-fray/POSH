@@ -177,7 +177,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 60px;
+  height: 60px;
 }
 
 .header__topbar-contacts {
@@ -252,7 +252,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 128px;
+  height: 48px;
+  padding: 40px 0;
 }
 
 .header__nav-logo {
@@ -352,6 +353,7 @@ img {
 
 .header__title p {
   padding-top: 16px;
+  font-size: 16px;
   display: block;
   color: white;
   font-family: "Conv_Lato-Regular";
@@ -498,12 +500,16 @@ img {
   text-transform: uppercase;
   background-repeat: no-repeat;
   background-position: 50% 40%;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
+  -webkit-transition: color 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, box-shadow 0.3s;
+  transition: color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
 }
 
 .services__list-element:hover {
   color: #e8be7b;
+  -webkit-box-shadow: 0 0 15px 1px #3a3a3a;
+          box-shadow: 0 0 15px 1px #3a3a3a;
 }
 
 .services__list-element.about {
@@ -719,13 +725,9 @@ img {
 }
 
 @media only screen and (max-width: 1600px) {
-  .header__title h1 {
-    font-size: calc(28px + (64-28)*((100vw - 320px) / (1600 - 320)));
-  }
   .header__title p {
     padding-left: 10px;
     padding-right: 10px;
-    font-size: calc(12px + (16-12)*((100vw - 320px) / (1600 - 320)));
   }
   .services__title {
     text-align: center;
@@ -759,12 +761,12 @@ img {
     margin-right: 10px;
   }
   .header__title h1 {
-    font-size: calc(28px + (64-28)*((100vw - 320px) / (1600 - 320)));
+    font-size: 48px;
   }
   .header__title p {
     padding-left: 10px;
     padding-right: 10px;
-    font-size: calc(12px + (16-12)*((100vw - 320px) / (1600 - 320)));
+    font-size: 14px;
   }
   .header__title .title-buttons {
     margin-top: 20px;
@@ -848,6 +850,12 @@ img {
   }
   .gallery__article-text p {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  .header__nav {
+    height: 100px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

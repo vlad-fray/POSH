@@ -122,7 +122,7 @@ $content-text-color: #3a3a3a;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        min-height: 60px;
+        height: 60px;
         &-contacts {
             width: 313px;
         }
@@ -168,7 +168,8 @@ $content-text-color: #3a3a3a;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 128px;
+        height: 48px;
+        padding: 40px 0;
         &-logo {
             width: 132px;
             height: 48px;
@@ -234,6 +235,7 @@ $content-text-color: #3a3a3a;
         }
         p {
             padding-top: 16px;
+            font-size: 16px;
             display: block;
             color: white;
             font-family: "Conv_Lato-Regular";
@@ -344,9 +346,10 @@ $content-text-color: #3a3a3a;
             text-transform: uppercase;
             background-repeat: no-repeat;
             background-position: 50% 40%;
-            transition: color 0.3s;
+            transition: color 0.3s, box-shadow 0.3s;
             &:hover{
                 color: #e8be7b;
+                box-shadow: 0 0 15px 1px $content-text-color;
             }
             &.about {
                 background-image: url("../images/icon-document.png");
@@ -523,13 +526,9 @@ $content-text-color: #3a3a3a;
 @media only screen and (max-width: 1600px) {
     .header {
         &__title {
-            h1 {
-                font-size: calc(28px + (64-28)*((100vw - 320px) / (1600 - 320)));
-            }
             p {
                 padding-left: 10px;
                 padding-right: 10px;
-                font-size: calc(12px + (16-12)*((100vw - 320px) / (1600 - 320)));
             }
         }
     }
@@ -568,12 +567,12 @@ $content-text-color: #3a3a3a;
         }
         &__title {
             h1 {
-                font-size: calc(28px + (64-28)*((100vw - 320px) / (1600 - 320)));
+                font-size: 48px;
             }
             p {
                 padding-left: 10px;
                 padding-right: 10px;
-                font-size: calc(12px + (16-12)*((100vw - 320px) / (1600 - 320)));
+                font-size: 14px;
             }
             .title-buttons {
                 margin-top: 20px;
@@ -681,6 +680,14 @@ $content-text-color: #3a3a3a;
                     font-size: 14px;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    .header {
+        &__nav {
+            height: 100px;
         }
     }
 }
