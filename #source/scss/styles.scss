@@ -169,7 +169,7 @@ $content-text-color: #3a3a3a;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            .menu-btn {
+            .menu-tab {
                 display: block;
                 color: white;
                 text-transform: uppercase;
@@ -369,7 +369,7 @@ $content-text-color: #3a3a3a;
                 box-shadow: 10px 10px 0 0 $hover_color-lighter;
             }
             .services__promo-article {
-                .article-link {
+                .article-tab {
                     color: $hover_color;
                     &::after {
                         transform: translateX(5px);
@@ -408,7 +408,7 @@ $content-text-color: #3a3a3a;
                 font-family: "Conv_Lato-Regular";
                 padding-bottom: 25px;
             }
-            .article-link {
+            .article-tab {
                 display: inline-block;
                 position: relative;
                 font-size: 18px;
@@ -764,7 +764,7 @@ $content-text-color: #3a3a3a;
         margin: 0 auto;
         padding: 70px 0;
         max-width: 554px;
-        &-link {
+        &-tab {
             text-transform: uppercase;
             transition: color 0.3s;
             &:hover {
@@ -845,7 +845,7 @@ $content-text-color: #3a3a3a;
             &-menu {
                 width: 100px;
                 flex-direction: column;
-                .menu-btn {
+                .menu-tab {
                     display: none;
                 }
             }
@@ -894,6 +894,27 @@ $content-text-color: #3a3a3a;
             &-image {
                 margin-right: 10px;
                 margin-bottom: 20px;
+            }
+        }
+    }
+    .contact {
+        padding: 60px 0;
+        &__info {
+            max-width: 300px;
+            margin: 0 auto;
+            flex-direction: column;
+            align-items: flex-start;
+            &-inner {
+                margin-bottom: 15px;
+                svg {
+                    width: 10%;
+                }
+                article {
+                    margin-left: 20px;
+                    h3 {
+                        font-size: 20px;
+                    }
+                }   
             }
         }
     }
@@ -995,34 +1016,13 @@ $content-text-color: #3a3a3a;
             }
         }
     }
-    .contact {
-        padding: 60px 0;
-        &__info {
-            max-width: 300px;
-            margin: 0 auto;
-            flex-direction: column;
-            align-items: flex-start;
-            &-inner {
-                margin-bottom: 15px;
-                svg {
-                    width: 10%;
-                }
-                article {
-                    margin-left: 20px;
-                    h3 {
-                        font-size: 20px;
-                    }
-                }   
-            }
-        }
-    }
     .footer {
         padding-bottom: 30px;
         &__nav {
             flex-direction: column;
             text-align: center;
             padding: 40px 0;
-            &-link {
+            &-tab {
                 padding-bottom: 10px;
             }
         }
