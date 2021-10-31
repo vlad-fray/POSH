@@ -1,0 +1,57 @@
+// Standart options
+$hover_color-lighter: #e8be7b;
+$hover_color: #d6a862;
+$content-text-color: #3a3a3a;
+//
+
+// Breakpoints
+$large: 1600px;
+$medium: 992px;
+$small: 700px;
+$tiny: 450px;
+
+// Files and elements include
+@import '_nullstyle.scss';
+@import './fonts';
+//
+
+// Animations
+@keyframes burger-menu-circling {
+  to {
+    transform: rotate(360deg);
+  }
+}
+//
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1192px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+// Header
+@import './header';
+
+// Services
+@import './services';
+
+// Gallery
+@import './gallery';
+
+// Channel
+@import './channel';
+
+// Latest Blog
+@import './latest-blog';
+
+// Contacts
+@import './contacts';
+
+// Footer
+@import './footer';

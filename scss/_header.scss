@@ -1,0 +1,294 @@
+.header {
+  position: relative;
+  background-image: url('../images/header-background.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100vh;
+  max-height: 900px;
+  display: flex;
+  flex-direction: column;
+  &__top {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+  &__topbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    &-contacts {
+      width: 313px;
+    }
+    &-social {
+      display: flex;
+      flex-direction: row;
+      width: 170px;
+      justify-content: space-between;
+      .social-icon {
+        display: block;
+        height: 14px;
+        width: 14px;
+        transition: box-shadow 0.3s;
+        border-radius: 4px;
+        &:hover {
+          box-shadow: inset 2px 2px 1px 0 $hover_color-lighter;
+        }
+      }
+
+      .twitter {
+        background-image: url('../images/sprite-social.png');
+      }
+      .fb {
+        background-image: url('../images/sprite-social.png');
+        background-position: -38px 0;
+      }
+      .youtube {
+        background-image: url('../images/sprite-social.png');
+        background-position: -77px 0;
+      }
+      .inst {
+        background-image: url('../images/sprite-social.png');
+        background-position: -118px 0;
+      }
+      .trash {
+        background-image: url('../images/sprite-social.png');
+        background-position: -157px 0;
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    padding: 40px 0;
+    &-logo {
+      width: 132px;
+      height: 48px;
+    }
+    &-menu {
+      width: 555px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .menu-tab {
+        display: block;
+        color: white;
+        text-transform: uppercase;
+        transition: color 0.3s;
+        &:hover {
+          color: $hover_color-lighter;
+        }
+      }
+    }
+    &-burger {
+      position: relative;
+      width: 20px;
+      height: 6px;
+      border-bottom: 2px solid white;
+      border-top: 2px solid white;
+      display: none;
+      &:hover {
+        border-color: $hover_color-lighter;
+      }
+      .burger-circle {
+        position: absolute;
+        top: -17.5px;
+        right: -7.5px;
+        animation-name: burger-menu-circling;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border-bottom: 2px solid white;
+        &:hover {
+          border-bottom-color: $hover_color-lighter;
+        }
+      }
+    }
+  }
+  &__title {
+    position: relative;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+      display: block;
+      color: white;
+      font-family: 'Conv_Butler_Medium';
+      font-size: 64px;
+      span {
+        color: $hover_color-lighter;
+      }
+    }
+    p {
+      padding-top: 16px;
+      font-size: 16px;
+      display: block;
+      color: white;
+      font-family: 'Conv_Lato-Regular';
+    }
+    .title-buttons {
+      margin-top: 47px;
+      .title-button {
+        display: inline-block;
+        width: 180px;
+        padding: 18px 0;
+        border: 1px solid white;
+        border-radius: 2px;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        font-family: 'Conv_Lato-Regular';
+        font-size: 14px;
+        transition: background-color 0.3s;
+        &.about-info {
+          margin-right: 15px;
+        }
+        &.play-video {
+          margin-left: 15px;
+          &::before {
+            content: '';
+            display: inline-block;
+            font-size: 0;
+            padding-right: 5px;
+            width: 0;
+            height: 0;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: 15px solid white;
+          }
+        }
+        &:hover {
+          background-color: #e8be7b;
+        }
+      }
+    }
+    .header__slider {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      height: 90px;
+      justify-content: space-between;
+      align-items: center;
+      right: 10px;
+      .slide {
+        width: 6px;
+        height: 6px;
+        background-color: white;
+        &:hover {
+          box-shadow: 0 0 0 2px $hover_color-lighter;
+        }
+        &.current::after {
+          position: absolute;
+          content: '';
+          top: -2px;
+          left: -2px;
+          width: 10px;
+          height: 10px;
+          background-color: $hover_color-lighter;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $large) {
+  .header {
+    &__title {
+      p {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  .header {
+    &__nav {
+      &-menu {
+        width: 100px;
+        flex-direction: column;
+        .menu-tab {
+          display: none;
+        }
+      }
+      &-burger {
+        display: block;
+        margin-right: 10px;
+      }
+    }
+    &__title {
+      h1 {
+        font-size: 48px;
+      }
+      p {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+      }
+      .title-buttons {
+        margin-top: 20px;
+        .title-button {
+          display: block;
+          &.about-info {
+            margin-right: 0;
+          }
+          &.play-video {
+            margin-left: 0;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $small) {
+  .header {
+    &__top {
+      &::before {
+        display: none;
+      }
+    }
+    &__topbar {
+      display: none;
+    }
+    &__title {
+      margin: 0 10px;
+      h1 {
+        font-size: 36px;
+      }
+      p {
+        display: none;
+      }
+      .title-buttons {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-height: $tiny) {
+  .header {
+    &__nav {
+      height: 100px;
+    }
+  }
+}

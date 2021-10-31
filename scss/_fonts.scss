@@ -1,0 +1,55 @@
+//Conv_Butler_Light
+@font-face {
+  font-family: 'Conv_Butler_Light';
+  src: url('../fonts/Butler_Light.eot');
+  src: local('☺'), url('../fonts/Butler_Light.woff') format('woff'), url('../fonts/Butler_Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Conv_Butler_Medium
+@font-face {
+  font-family: 'Conv_Butler_Medium';
+  src: url('../fonts/Butler_Medium.eot');
+  src: local('☺'), url('../fonts/Butler_Medium.woff') format('woff'), url('../fonts/Butler_Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+//Conv_Butler_Regular
+@font-face {
+  font-family: 'Conv_Butler_Regular';
+  src: url('../fonts/Butler_Regular.eot');
+  src: local('☺'), url('../fonts/Butler_Regular.woff') format('woff'), url('../fonts/Butler_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Conv_Lato-Regular
+@font-face {
+  font-family: 'Conv_Lato-Regular';
+  src: url('fonts/Lato-Regular.eot');
+  src: local('☺'), url('../fonts/Lato-Regular.woff') format('woff'), url('../fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//HelveticaNeueCyr-Light
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url('../HelveticaNeueCyr-Light.eot');
+  src: local('HelveticaNeueCyr-Light'), url('../HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'), url('../HelveticaNeueCyr-Light.woff2') format('woff2'),
+    url('../HelveticaNeueCyr-Light.woff') format('woff'), url('../HelveticaNeueCyr-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+//HelveticaNeueCyr-Roman
+@font-face {
+  font-family: 'HelveticaNeueCyr-Roman';
+  src: url('../HelveticaNeueCyr-Roman.eot');
+  src: local('HelveticaNeueCyr-Roman'), url('../HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'), url('../HelveticaNeueCyr-Roman.woff2') format('woff2'),
+    url('../HelveticaNeueCyr-Roman.woff') format('woff'), url('../HelveticaNeueCyr-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
